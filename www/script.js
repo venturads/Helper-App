@@ -1,5 +1,6 @@
 function getap (){
     const n = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=82413d9fd4ad42528ed2caeb0473d089';
+    document.getElementById("root").innerHTML = "<div class='loader'></div>";
   fetch(n)
   .then(function(response){
     return response.json();
@@ -22,6 +23,9 @@ function getap (){
   function getGar (){
     //const n2 = 'https://content.guardianapis.com/search?api-key=799b91f2-850a-4dd2-a112-c1a67662f22d';
     const n2 = 'https://venturads.com/weldinghelper/api/get_posts/';
+
+    document.getElementById("root").innerHTML = "<div class='loader'></div>";
+    // alert("loading...");
   fetch(n2)
   .then(function(response){
     return response.json();
