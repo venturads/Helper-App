@@ -37,7 +37,7 @@ function getap (){
   function getdata(data){
     let list="";
     for(let i=0;i<data.posts.length;i++){
-      list += "<div class='btn-group-justified content'><a href='#' type='button' class='btn btn-info' id='settings' data-toggle='collapse' data-target='#demo" + data.posts[i].id + "'>" +  data.posts[i].title + "</a></div><div id='demo" +  data.posts[i].id + "' class='collapse'>" + data.posts[i].content + "</div></div>";
+      list += "<div class='btn-group-justified content'><a href='#' type='button' class='btn btn-info sharp' id='settings' data-toggle='collapse' data-target='#demo" + data.posts[i].id + "'>" +  data.posts[i].title + "</a></div><div id='demo" +  data.posts[i].id + "' class='collapse'>" + data.posts[i].content + "</div></div>";
       }
     document.getElementById("root").innerHTML = list;
   }
