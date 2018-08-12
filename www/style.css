@@ -6,9 +6,9 @@
   position: relative;
   left: 32vw;
   top: 20vh;
-  border: 16px solid #f3f3f3;
+  border: 6px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 6px solid #3498db;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 1s linear infinite; /* Safari */

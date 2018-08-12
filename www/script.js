@@ -43,5 +43,25 @@ function getap (){
   }
     
   }
-  document.getElementById('garnews').addEventListener('click', getGar);
+  document.getElementById('content-app').addEventListener('click', getGar);
   
+
+  function onDeviceReady() {
+    document.removeEventListener('deviceready', onDeviceReady, false);
+
+    // Set AdMobAds options:
+    admob.setOptions({
+        publisherId:          "ca-app-pub-3864996818231266~5103837634",  // Required
+        interstitialAdId:     "ca-app-pub-3864996818231266/6580570832",  // Optional
+        // tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
+        // tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
+        // tappxShare:           0.5                                        // Optional
+    });
+    admob.createBannerView();
+    admob.requestInterstitialAd({
+      autoShowInterstitial: true
+  });
+}
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
