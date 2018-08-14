@@ -12,6 +12,7 @@ body{
 }
 .sharp{
     border-radius: 0px;
+    opacity: .9;
    }
 
   .loader {

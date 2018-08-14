@@ -1,30 +1,7 @@
-function getap (){
-    const n = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=82413d9fd4ad42528ed2caeb0473d089';
-    document.getElementById("root").innerHTML = "<div class='loader'></div>";
-  fetch(n)
-  .then(function(response){
-    return response.json();
-    })
-  .then(function(data){
-     getdata(data);
-  })
-  
-  function getdata(data){
-    let list="";
-    for(let i=0;i<data.articles.length;i++){
-      list += "<div id='pic'><a href='" + data.articles[i].url + "' target='_blank'><img src='" + data.articles[i].urlToImage + "' width='100%' />" + data.articles[i].title + "</a></div>";
-      }
-    document.getElementById("root").innerHTML = list;
-  }
-    
-  }
-  document.getElementById('apnews').addEventListener('click', getap);
-  
   function getGar (){
-    //const n2 = 'https://content.guardianapis.com/search?api-key=799b91f2-850a-4dd2-a112-c1a67662f22d';
     const n2 = 'https://venturads.com/weldinghelper/api/get_posts/';
 
-    document.getElementById("root").innerHTML = "<div class='loader'></div>";
+  document.getElementById("root").innerHTML = "<div class='loader'></div>";
     // alert("loading...");
   fetch(n2)
   .then(function(response){
@@ -37,7 +14,7 @@ function getap (){
   function getdata(data){
     let list="";
     for(let i=0;i<data.posts.length;i++){
-      list += "<div class='btn-group-justified content'><a href='#' type='button' class='btn btn-info sharp' id='settings' data-toggle='collapse' data-target='#demo" + data.posts[i].id + "'>" +  data.posts[i].title + "</a></div><div id='demo" +  data.posts[i].id + "' class='collapse'>" + data.posts[i].content + "</div></div>";
+      list += "<div class='btn-group-justified content'><a  type='button' class='btn btn-info sharp' id='settings' data-toggle='collapse' data-target='#demo" + data.posts[i].id + "'>" +  data.posts[i].title + "</a></div><div id='demo" +  data.posts[i].id + "' class='collapse'>" + data.posts[i].content + "</div></div>";
       }
     document.getElementById("root").innerHTML = list;
   }
@@ -45,6 +22,42 @@ function getap (){
   }
   document.getElementById('content-app').addEventListener('click', getGar);
   
+  function getMenu (){
+    // const n2 = 'https://venturads.com/helper-menu.json';
+
+  document.getElementById("root").innerHTML = "<div class='loader'></div>";
+    let data=[
+      {
+        id: 1, name: "MIG Weld Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.LearnHowToMigWeld"
+      },
+      {
+        id: 2, name: "TIG Weld Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.LearnHowToTIGWeld"
+      },
+      {
+        id: 3, name: "CNC Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.CNCHelperPlay"
+      },
+      {
+        id: 4, name: "Solidworks Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.albert.SolidworksHelper"
+      },
+      {
+        id: 5, name: "Ring Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.RingJumper"
+      },
+      {
+        id: 6, name: "Sheet Metal Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.SheetMetalHelper"
+      },
+      {
+        id: 6, name: "Venturads.com", link: "https://venturads.com"
+      }
+    ];
+    let list = "";
+    console.log("mylist: " + data[0].name);
+    for(let i=0;i<data.length;i++){
+      list += "<div class='btn-group-justified content'><a href='" +  data[i].link + "' type='button' class='btn btn-info sharp' id='settings' data-target='#demo" + data[i].id + "' target='_blank'>" +  data[i].name + "</a></div><div id='demo" +  data[i].id + "' class='collapse'>" + data[i].name + "</div></div>";
+    document.getElementById('root').innerHTML = list;
+  }
+    
+  }
+  document.getElementById('content-menu').addEventListener('click', getMenu);
 
   function onDeviceReady() {
     document.removeEventListener('deviceready', onDeviceReady, false);
