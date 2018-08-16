@@ -8,6 +8,7 @@
         Venturads.com Team
     </author>
     <splash src="splash.png" />
+    <preference name="SplashScreenDelay" value="5000" />
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="23" />
