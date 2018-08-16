@@ -71,9 +71,9 @@
         // tappxShare:           0.5                                        // Optional
     });
     admob.createBannerView();
-    // admob.requestInterstitialAd({
-    //   autoShowInterstitial: true
-    // });
+    admob.requestInterstitialAd({
+      autoShowInterstitial: true
+    });
 }
 
 document.addEventListener("deviceready", onDeviceReady, false);
