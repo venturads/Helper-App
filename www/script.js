@@ -64,7 +64,7 @@
 
     // Set AdMobAds options:
     admob.setOptions({
-        publisherId:          "ca-app-pub-3864996818231266~5103837634",  // Required
+        publisherId:          "ca-app-pub-3864996818231266/6846758432",  // Required
         interstitialAdId:     "ca-app-pub-3864996818231266/6580570832",  // Optional
         // tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
         // tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
