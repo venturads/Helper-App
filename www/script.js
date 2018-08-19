@@ -1,5 +1,5 @@
   function getGar (){
-    const n2 = 'https://venturads.com/weldinghelper/api/get_posts/';
+    const n2 = 'http://venturads.com/weldinghelper/api/get_category_posts/?slug=welding';
 
   document.getElementById("root").innerHTML = "<div class='loader'></div>";
     // alert("loading...");
