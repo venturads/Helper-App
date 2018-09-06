@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.venturads.WeldingHelperPlay" version="2.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.venturads.WeldingHelperPlay" version="2.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Welding Helper</name>
     <description>
         Welding Helper
@@ -15,7 +15,7 @@
     <plugin name="cordova-plugin-device" spec="1.1.7" />
     <plugin name="cordova-plugin-device-orientation" spec="1.0.7" />
     <plugin name="cordova-plugin-dialogs" spec="1.2.1" />
-    <plugin name="cordova-plugin-file" spec="4.1.1" />
+    <!-- <plugin name="cordova-plugin-file" spec="4.1.1" /> -->
     <!-- <plugin name="cordova-plugin-geolocation" spec="2.1.0" />
     <plugin name="cordova-plugin-globalization" spec="1.0.9" /> -->
     <plugin name="cordova-plugin-inappbrowser" spec="1.3.0" />
