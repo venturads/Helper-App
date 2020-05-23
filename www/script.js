@@ -52,11 +52,12 @@ function getdata(data){
 }
   
 }
-document.getElementById('content-news').addEventListener('click', getNews);
+// document.getElementById('content-news').addEventListener('click', getNews);
 
 // get wordpress api json data
 function getGar (){
-    const n2 = 'http://venturads.com/weldinghelper/api/get_category_posts/?slug=welding';
+    //const n2 = 'http://venturads.com/weldinghelper/api/get_category_posts/?slug=welding';
+    const n2 = 'https://venturads.com/json/weld.json';
 
   document.getElementById("root").innerHTML = "<div class='loader'></div>";
     // alert("loading...");
@@ -70,14 +71,62 @@ function getGar (){
   
   function getdata(data){
     let list="";
-    for(let i=0;i<data.posts.length;i++){
-      list += "<div class='btn-group-justified content'><a  type='button' class='btn btn-info sharp' id='settings' data-toggle='collapse' data-target='#demo" + data.posts[i].id + "'>" +  data.posts[i].title + "</a></div><div id='demo" +  data.posts[i].id + "' class='collapse'>" + data.posts[i].content + "</div></div>";
+    for(let i=0;i<data.data.length;i++){
+      list += "<div class='btn-group-justified content'><a  type='button' class='btn btn-info sharp' id='settings' data-toggle='collapse' data-target='#demo" + data.data[i].id + "'>" +  data.data[i].title + "</a></div><div id='demo" +  data.data[i].id + "' class='collapse'>" + data.data[i].content + "</div></div>";
       }
     document.getElementById("root").innerHTML = list;
   }
     
   }
-  document.getElementById('content-app').addEventListener('click', getGar);
+
+// more menu list
+function getData (){
+  // const n2 = 'https://venturads.com/helper-menu.json';
+
+document.getElementById("root").innerHTML = "<div class='loader'></div>";
+  let data=[
+    {
+      id: 2020,
+      title: "Chart",
+      content: "Welding Chart",
+      url: "img/1.jpg",
+      urlToImage: "img/1.jpg"
+  },{
+    id: 2021,
+    title: "Symbols",
+    content: "Symbols",
+    url: "img/2.jpg",
+    urlToImage: "img/2.jpg"
+  },{
+    id: 2022,
+    title: "Specs",
+    content: "Specs",
+    url: "img/3.jpg",
+    urlToImage: "img/3.jpg"
+  },{
+    id: 2023,
+    title: "Settings",
+    content: "Settings",
+    url: "img/4.jpg",
+    urlToImage: "img/4.jpg"
+  },{
+    id: 2024,
+    title: "Basic Symbols",
+    content: "Basic Symbols",
+    url: "img/5.jpg",
+    urlToImage: "img/5.jpg"
+  }
+  ];
+  let list = "";
+  console.log("mylist: " + data[0].title);
+  for(let i=0;i<data.length;i++){
+    list += "<div class='btn-group-justified content'><a  type='button' class='btn btn-info sharp' id='settings' data-toggle='collapse' data-target='#demo" + data[i].id + "'>" +  data[i].title + "</a></div><div id='demo" +  data[i].id + "' class='collapse'><img src='" + data[i].url + "' width='100%' ></div></div>";
+  document.getElementById('root').innerHTML = list;
+}
+  
+}
+
+document.getElementById('content-app').addEventListener('click', getData);
   
 // more menu list
   function getMenu (){
@@ -86,10 +135,10 @@ function getGar (){
   document.getElementById("root").innerHTML = "<div class='loader'></div>";
     let data=[
       {
-        id: 1, name: "MIG Weld Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.LearnHowToMigWeld"
+        id: 1, name: "RPM Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.RPM_HELPER"
       },
       {
-        id: 2, name: "TIG Weld Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.LearnHowToTIGWeld"
+        id: 2, name: "Endline puzzle game", link: "https://play.google.com/store/apps/details?id=com.venturads.games.EndLine"
       },
       {
         id: 3, name: "CNC Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.CNCHelperPlay"
@@ -98,7 +147,7 @@ function getGar (){
         id: 4, name: "Solidworks Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.albert.SolidworksHelper"
       },
       {
-        id: 5, name: "Ring Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.RingJumper"
+        id: 5, name: "Ballon Pop Free puzzle game", link: "https://play.google.com/store/apps/details?id=com.venturads.BalloonPopFree"
       },
       {
         id: 6, name: "Sheet Metal Helper", link: "https://play.google.com/store/apps/details?id=com.venturads.SheetMetalHelper"
