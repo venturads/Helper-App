@@ -4,7 +4,7 @@ const getSearch = function(){
   document.getElementById("root").innerHTML = "Search: " + searchVar;
   getSe(searchVar);
 }
-document.getElementById("btn").addEventListener("click", getSearch);
+// document.getElementById("btn").addEventListener("click", getSearch);
 function getSe (n){
   const se = 'http://venturads.com/weldinghelper/api/get_search_results/?search=' + n;
 
@@ -27,7 +27,7 @@ function getdata(data){
 }
   
 }
-document.getElementById('btn').addEventListener('click', getSe);
+// document.getElementById('btn').addEventListener('click', getSe);
 
 // get wordpress api json data
 function getNews (){
