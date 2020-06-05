@@ -25,7 +25,7 @@
     <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
     <plugin name="phonegap-admob" spec="4.1.15" />
     <platform name="android">
-        <icon density="ldpi" src="www/res/icon/android/Icon-36.png" />
+        <icon density="ldpi" src="www/res/icon/android/Icon-32.png" />
         <icon density="mdpi" src="www/res/icon/android/Icon-48.png" />
         <icon density="hdpi" src="www/res/icon/android/Icon-72.png" />
         <icon density="xhdpi" src="www/res/icon/android/Icon-96.png" />
@@ -35,7 +35,7 @@
         
     </platform>
     <platform name="ios">
-        <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
+        <!-- <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
         <icon height="40" platform="ios" src="www/res/icon/ios/icon-40.png" width="40" />
         <icon height="80" platform="ios" src="www/res/icon/ios/icon-40@2x.png" width="80" />
@@ -60,7 +60,7 @@
         <splash height="2048" platform="ios" src="www/res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" />
         <splash height="1024" platform="ios" src="www/res/screen/ios/Default-Portrait~ipad.png" width="768" />
         <splash height="960" platform="ios" src="www/res/screen/ios/Default@2x~iphone.png" width="640" />
-        <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
+        <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" /> -->
     </platform>
     <platform name="wp8">
         <icon height="99" platform="wp8" src="www/res/icon/wp8/ApplicationIcon.png" width="99" />
