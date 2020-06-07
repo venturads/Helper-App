@@ -1,3 +1,9 @@
+//close navbar menu on link click
+document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
+  document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
+  this.classList.remove('is-visible');
+}, false);
+
 //go home page
 function getHome() {
   document.getElementById('root').innerHTML = "<img src='./img/welding.gif' width='100%' height='100%'></div></div>";
@@ -158,7 +164,7 @@ document.getElementById("content-app").innerHTML = "<div class='loader'></div>";
   ];
   let list = "";
   for(let i=0;i<data.length;i++){
-    list += "<a class='mdl-navigation__link' type='button' id=" + data[i].id + " class='btn btn-primary sharp'>" +  data[i].title + "</a></br>";
+    list += "<a href=#" + data[i].id + " class='mdl-navigation__link' type='button' id=" + data[i].id + " class='btn btn-primary sharp'>" +  data[i].title + "</a></br>";
     document.getElementById('content-app').innerHTML = list;
   }
   for(let i=0;i<data.length;i++){ 
