@@ -87,19 +87,19 @@ document.getElementById("root").innerHTML = "<div class='loader'></div>";
   let data=[
     {
       id: 2020,
-      title: "Setting Up",
+      title: "Cylinder Data",
       content: "Welding Chart",
       url: "img/1.jpg",
       urlToImage: "img/1.jpg"
     },{
       id: 2021,
-      title: "Connect Torch",
+      title: "Weld Types",
       content: "Symbols",
       url: "img/2.jpg",
       urlToImage: "img/2.jpg"
     },{
       id: 2022,
-      title: "Foot Pedal",
+      title: "Symbols",
       content: "Specs",
       url: "img/3.jpg",
       urlToImage: "img/3.jpg"
@@ -111,31 +111,31 @@ document.getElementById("root").innerHTML = "<div class='loader'></div>";
       urlToImage: "img/4.jpg"
     },{
       id: 2024,
-      title: "Grind Tungsten",
+      title: "Basic Symbols",
       content: "Basic Symbols",
       url: "img/5.jpg",
       urlToImage: "img/5.jpg"
     },  {
       id: 2025,
-      title: "Gas Flow",
+      title: "Performance Data",
       content: "Welding Chart",
       url: "img/6.jpg",
       urlToImage: "img/6.jpg"
     },{
       id: 2026,
-      title: "Amperage",
+      title: "Fillet Types",
       content: "Data",
       url: "img/7.jpg",
       urlToImage: "img/7.jpg"
     },{
       id: 2027,
-      title: "Clean Materials",
+      title: "More Types",
       content: "Types",
       url: "img/8.jpg",
       urlToImage: "img/8.jpg"
     },{
       id: 2028,
-      title: "Electrode",
+      title: "Weld Joints",
       content: "More Types",
       url: "img/9.jpg",
       urlToImage: "img/9.jpg"
@@ -147,70 +147,88 @@ document.getElementById("root").innerHTML = "<div class='loader'></div>";
       urlToImage: "img/10.jpg"
     },{
       id: 2030,
-      title: "Tack Weld",
+      title: "Process",
       content: "Process",
       url: "img/11.jpg",
       urlToImage: "img/11.jpg"
     },{
       id: 2031,
-      title: "TIG Torch",
+      title: "Safety",
       content: "Safety",
       url: "img/12.jpg",
       urlToImage: "img/12.jpg"
     },{
       id: 2032,
-      title: "Pedal Control",
+      title: "Equipment",
       content: "Equipment",
       url: "img/13.jpg",
       urlToImage: "img/13.jpg"
     },{
       id: 2033,
-      title: "Filler",
+      title: "Workbench",
       content: "Workbench",
       url: "img/14.jpg",
       urlToImage: "img/14.jpg"
     },{
       id: 2034,
-      title: "Base Metal",
+      title: "Seated Workbench",
       content: "Seated Workbench",
       url: "img/15.jpg",
       urlToImage: "img/15.jpg"
     },  {
       id: 2035,
-      title: "Puddle",
+      title: "Mill Direction",
       content: "Mill Direction",
       url: "img/16.jpg",
       urlToImage: "img/16.jpg"
     },{
       id: 2036,
-      title: "Fillet",
+      title: "Cutting Speeds",
       content: "Cutting Speeds",
       url: "img/17.jpg",
       urlToImage: "img/17.jpg"
     },{
       id: 2037,
-      title: "Lap Joint",
+      title: "Decimal Chart",
       content: "Decimal Chart",
       url: "img/18.jpg",
       urlToImage: "img/18.jpg"
     },{
       id: 2038,
-      title: "T-joint",
+      title: "Rpm",
       content: "Rpm",
       url: "img/19.jpg",
       urlToImage: "img/19.jpg"
     },{
       id: 2039,
-      title: "Corner Joint",
+      title: "Tap/Drill Chart",
       content: "Tap/Drill Chart",
       url: "img/20.jpg",
       urlToImage: "img/20.jpg"
     },{
       id: 2040,
-      title: "Butt Weld",
+      title: "Inch/Metric Chart",
       content: "Inch/Metric Chart",
       url: "img/21.jpg",
       urlToImage: "img/21.jpg"
+    },{
+      id: 2041,
+      title: "Gauge Chart",
+      content: "Rpm",
+      url: "img/22.jpg",
+      urlToImage: "img/22.jpg"
+    },{
+      id: 2042,
+      title: "Details",
+      content: "Tap/Drill Chart",
+      url: "img/23.jpg",
+      urlToImage: "img/23.jpg"
+    },{
+      id: 2043,
+      title: "Inert Gas",
+      content: "Inch/Metric Chart",
+      url: "img/24.jpg",
+      urlToImage: "img/24.jpg"
     }
   ];
   let list = "";
