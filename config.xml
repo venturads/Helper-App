@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.venturads.WeldingHelperPlay" version="2.3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Welding Helper</name>
+<widget id="com.venturads.SheetMetalHelper" version="2.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Sheetmetal Helper</name>
     <description>
-        Welding Helper
+        Sheetmetal Helper step by step tutorial.
     </description>
     <author email="apps@venturads.com" href="https://venturads.com">
         Venturads.com Team
@@ -11,9 +11,8 @@
     <preference name="SplashScreenDelay" value="5000" />
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="android-minSdkVersion" value="14" />
-    <preference name="android-targetSdkVersion" value="28" />
+    <preference name="android-targetSdkVersion" value="26" />
     <plugin name="cordova-plugin-device" spec="1.1.7" />
     <plugin name="cordova-plugin-device-orientation" spec="1.0.7" />
     <plugin name="cordova-plugin-dialogs" spec="1.2.1" />
@@ -26,7 +25,7 @@
     <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
     <plugin name="phonegap-admob" spec="4.1.15" />
     <platform name="android">
-        <icon density="ldpi" src="www/res/icon/android/Icon-32.png" />
+        <icon density="ldpi" src="www/res/icon/android/Icon-36.png" />
         <icon density="mdpi" src="www/res/icon/android/Icon-48.png" />
         <icon density="hdpi" src="www/res/icon/android/Icon-72.png" />
         <icon density="xhdpi" src="www/res/icon/android/Icon-96.png" />
@@ -35,7 +34,7 @@
         <splash density="land-ldpi" src="www/res/screen/android/Icon-512.png" />
         
     </platform>
-    <!-- <platform name="ios">
+    <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
         <icon height="40" platform="ios" src="www/res/icon/ios/icon-40.png" width="40" />
@@ -62,12 +61,12 @@
         <splash height="1024" platform="ios" src="www/res/screen/ios/Default-Portrait~ipad.png" width="768" />
         <splash height="960" platform="ios" src="www/res/screen/ios/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
-    </platform> -->
-    <!-- <platform name="wp8">
+    </platform>
+    <platform name="wp8">
         <icon height="99" platform="wp8" src="www/res/icon/wp8/ApplicationIcon.png" width="99" />
         <icon height="159" platform="wp8" src="www/res/icon/wp8/Background.png" width="159" />
         <splash height="1280" platform="wp8" src="www/res/screen/wp8/screen-portrait.jpg" width="768" />
-    </platform> -->
+    </platform>
     <!-- <platform name="windows">
         <icon height="150" platform="windows" src="www/res/icon/windows/Square150x150Logo.scale-100.png" width="150" />
         <icon height="30" platform="windows" src="www/res/icon/windows/Square30x30Logo.scale-100.png" width="30" />
