@@ -6,10 +6,11 @@ document.querySelector('.mdl-layout__drawer').addEventListener('click', function
 
 //go home page
 function getHome() {
-  document.getElementById('root').innerHTML = "<img src='./img/bg.gif' width='100%' height='100%'></div></div>";
+  document.getElementById('root').innerHTML = "";
 }
-document.getElementById('home-btn').addEventListener('click', getHome);
-document.getElementById('demo-avatar').addEventListener('click', getHome);
+document.getElementById('home-btn').addEventListener('click', homeRoot);
+document.getElementById('demo-avatar').addEventListener('click', homeRoot);
+
 // more menu list
 function getData (){
   // const n2 = 'https://venturads.com/helper-menu.json';
@@ -182,8 +183,9 @@ getData();
     document.removeEventListener('deviceready', onDeviceReady, false);
     // Set AdMobAds options:
     admob.setOptions({
-      publisherId:          "ca-app-pub-3864996818231266/9804421234",  // Required Banner ads
-      interstitialAdId:     "ca-app-pub-3864996818231266/1155086435",  // Optional Full screen ads
+        publisherId:          "ca-app-pub-3864996818231266/6846758432",  // Required
+        interstitialAdId:     "ca-app-pub-3864996818231266/6580570832",  // Optional
+
         // tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
         // tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
         // tappxShare:           0.5                                        // Optional

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.venturads.SheetMetalHelper" version="2.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Sheetmetal Helper</name>
+<widget id="com.venturads.WeldingHelperPlay" version="2.2.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Welding Helper</name>
+
     <description>
         Sheetmetal Helper step by step tutorial.
     </description>
@@ -11,8 +12,10 @@
     <preference name="SplashScreenDelay" value="5000" />
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="14" />
-    <preference name="android-targetSdkVersion" value="26" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-targetSdkVersion" value="28" />
+
     <plugin name="cordova-plugin-device" spec="1.1.7" />
     <plugin name="cordova-plugin-device-orientation" spec="1.0.7" />
     <plugin name="cordova-plugin-dialogs" spec="1.2.1" />
