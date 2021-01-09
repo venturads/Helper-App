@@ -14,7 +14,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="android-minSdkVersion" value="16" />
-    <preference name="android-targetSdkVersion" value="28" />
+    <preference name="android-targetSdkVersion" value="29" />
 
     <plugin name="cordova-plugin-device" spec="1.1.7" />
     <plugin name="cordova-plugin-device-orientation" spec="1.0.7" />
